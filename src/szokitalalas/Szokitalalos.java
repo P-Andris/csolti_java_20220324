@@ -16,7 +16,7 @@ public class Szokitalalos {
 
     public static String tip_be() {
         System.out.print("Adj meg egy két betűs szót: ");
-        String tip = sc.nextLine();
+        String tip = sc.nextLine().toLowerCase();
         return tip;
     }
 
