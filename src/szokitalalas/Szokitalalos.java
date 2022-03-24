@@ -21,7 +21,14 @@ public class Szokitalalos {
     }
 
     public static void eredmeny(String tip, String szo) {
-        
+        if(tip == szo)
+            System.out.println("Kitaláltad!");
+        else if(tip.charAt(0) == szo.charAt(0) || tip.charAt(1) == szo.charAt(1))
+            System.out.println("Az egyik betű jó, és jó helyen van.");
+        else if(tip.charAt(0) == szo.charAt(1) || tip.charAt(1) == szo.charAt(0))
+            System.out.println("Az egyik betű jó, de nem jó helyen van.");
+        else
+            System.out.println("Nem jó szó.");
     }
 
     public static void main(String[] args) {
